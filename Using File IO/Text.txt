@@ -1,0 +1,2 @@
+Hello, reader. this is a text file. It stores text.
+And thats pretty much it.
