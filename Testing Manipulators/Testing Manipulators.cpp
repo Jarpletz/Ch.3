@@ -11,7 +11,7 @@ int main()
 	// WIthout any manipulators.
 
 
-	cout << fixed << 287.134 << " " << 19.00000001 << endl;
+	cout << setprecision(2) << fixed << 287.134 << " " << 19.00000001 << endl;
 	// With the fixed manipulator.
 	cout.unsetf(ios::fixed); // Disable fixed manipulator
 
