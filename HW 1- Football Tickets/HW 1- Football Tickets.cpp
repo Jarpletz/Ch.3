@@ -16,6 +16,7 @@ int main()
 
     cout << "Ticket Sales\n" << endl;
     fout << "Type            Price   Qty    Sale"<<endl;
+    fout << setprecision(2) << fixed << showpoint;
     for (int i = 0; i < typeLength;i++) {
         cout << setw(24) << left << setfill('.') << type[i] + " Tickets Sold:" ;
         cin >> ticketNumbs[i];
@@ -25,7 +26,7 @@ int main()
         fout <<setfill(' ')<<setw(16) << left << type[i] <<  "$"<<setw(7) <<price[i] << setw(7) << ticketNumbs[i] <<"$"<< ticketSales[i] << endl;
     }
     fout << endl << setfill('.') << setw(22) << "Total Tickets Sold:" << totalTickets << endl;
-    fout << endl << setfill('.') << setw(22) << "Total Sales:" << totalSales << endl;
+    fout << endl << setfill('.') << setw(22) << "Total Sales:"<<"$"<< totalSales << endl;
     cout << "\n Results Printed to Sales reciept!";
 
     fout.close();
